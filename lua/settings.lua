@@ -29,7 +29,7 @@ opt.showmatch = true            -- show matching
 opt.hlsearch = true             -- highlight search 
 opt.incsearch = true            -- incremental search
 opt.wildmode = 'longest', 'list'-- get bash-like tab completions
-opt.cc = '80'  		              -- set an 80 column border for good coding style
+opt.cc = '80'  		            -- set an 80 column border for good coding style
 opt.clipboard = 'unnamedplus'   -- using system clipboard
 opt.cursorline = true           -- highlight current cursorline
 opt.ttyfast = true              -- Speed up scrolling in Vim
@@ -86,6 +86,7 @@ require('lualine').setup {
   options = { theme  = 'gruvbox' },
 }
 
+
 -------------------------------Bufferline--------------------------------------
 require("bufferline").setup {
   options = {
@@ -99,9 +100,12 @@ require("bufferline").setup {
     },
   },
 }
+
+
 -------------------------------Telescope---------------------------------------
 vim.keymap.set('n', 'ff', telescope.find_files, {})
 vim.keymap.set('n', 'fg', telescope.live_grep, {})
+
 
 ---------------------------------LSP-------------------------------------------
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
