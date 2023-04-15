@@ -4,7 +4,7 @@
 For Linux Manjaro:
 
 ```sh
-sudo pacman -S neovim
+sudo snap install nvim --classic
 sudo pacman -S pyright
 ```
 For macOS:
